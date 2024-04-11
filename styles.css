@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Sora:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Fuentes*/
+    --custom-ff-headings: "Sawarabi Mincho", serif;
+    --custom-ff-regular: "Sora", sans-serif;
+    /*Colores*/
+    --custom-color-charcoal: #2f4049;
+    --custom-color-slategray: #768990;
+    --custom-color-gunmetal: #1D343F;
+    --custom-color-cadetgray: #9FB0B6;
+    --custom-color-ruddyblue: #7EABD4; /*call to action color?*/
+}
+
+img{ 
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-family: var(--custom-ff-headings);
+}
+
+p{
+    font-family: var(--custom-ff-regular);
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.hero{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(163deg, rgba(118,137,144,0.2) 0%, 
+    rgba(47,64,73,0.2) 50%),url("assets/img/1-zac-gudakov-lu58343qe8I-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-left{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.hero-logo{
+    width:64px;
+}
+
+.hero-heading{
+    font-size: 2.75rem;
+    color: var(--custom-color-cadetgray);
+    backdrop-filter: blur(5px);
+
+    text-shadow: 4px 4px 2px rgba(47,64,73,0.59);
+}
+
+.hero-text{
+    font-size: 1.25rem;
+}
+
+
+/* _________________ MEDIA QUERIES ________________________ */
+@media screen and (max-width: 768px) {
+    .hero-left{
+        width: 100%;
+        text-align: center;
+    }
+}
